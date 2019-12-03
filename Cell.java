@@ -1,23 +1,13 @@
 public class Cell {
 
-    private int x;
-    private int y;
+    private Point pos;
     private int g;
     private int h;
 
-    public Cell(int x, int y, int g, int h) {
-        this.x = x;
-        this.y = y;
+    public Cell(Point pos, int g, int h) {
+        this.pos = pos;
         this.g = g;
         this.h = h;
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
     }
 
     public void setG(int newG) {
@@ -33,6 +23,11 @@ public class Cell {
     }
 
     public Point getPoint() {
-        return new Point(this.x, this.y);
+        return pos;
     }
+
+    public String toString() {
+        return pos.toString() + " Distance from start: " + g + " Hscore: " + h;
+    }
+
 }
