@@ -31,14 +31,22 @@ class AStarPathingStrategy
         HashMap<Point, Cell> closedList = new HashMap<>();
 
         //Turn start point into Cell object and add to open list to start things off
-        Cell origin = new Cell(start, 0, calcH(start, end));
+        Cell origin = new Cell(start, 0, calcH(start, end), null);
         openList.add(origin);
+
+        //Final cell that is adjacent to end point
+        Cell finalCell = null;
 
         while (openList.size() > 0) {
 
             //Get node with least f value in openList (should be top b/c using PriorityQueue)
-            Cell current = openList.remove();
-            openList.clear();
+            Cell current = openList.poll();
+
+            //Check if destination has been reached
+            if(withinReach.test(current.getPoint(), end)) {
+                finalCell = current;
+                break;
+            }
 
             //Use potentialNeighbor function to get list of potential neighbors
             //Clean up potentialNeighbor list by filtering out points that are blocked or are in closed list
@@ -51,15 +59,24 @@ class AStarPathingStrategy
             for (int i = 0; i < cleanAdjPoints.size(); i ++) {
 
                 Point neighbor = cleanAdjPoints.get(i);
-                openList.add(new Cell(neighbor, current.getG() + 1, calcH(neighbor, end)));
+                openList.add(new Cell(neighbor, current.getG() + 1, calcH(neighbor, end), current));
 
             }
 
-
             //add current to closed list
             closedList.put(current.getPoint(), current);
-            path.add(0, current.getPoint());
+        }
 
+        //Add finalCell's point to path
+        path.add(finalCell.getPoint());
+
+        //Keep adding previous cell's point to path until get to origin point
+        while (finalCell.getPrevious() != origin) {
+            path.add(finalCell.getPrevious().getPoint());
+
+            if (finalCell.getPrevious() != origin) {
+                finalCell = finalCell.getPrevious();
+            }
         }
 
         return path;

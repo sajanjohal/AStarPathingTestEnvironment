@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28269992-2f0f-49ec-a4b7-1a7b5bc55cb3" name="Default Changelist" comment="" />
+    <list default="true" id="28269992-2f0f-49ec-a4b7-1a7b5bc55cb3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/AStarPathingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/AStarPathingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AStarTesting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AStarTesting/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AStarTesting/AStarPathingStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AStarTesting/AStarPathingStrategy.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1UB7Oy9q8OmZszW7rj3VYV8XJvV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="tasks" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -48,11 +74,61 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574818106593</updated>
-      <workItem from="1574818107710" duration="54000" />
+      <workItem from="1574818107710" duration="1780000" />
+      <workItem from="1575067722523" duration="744000" />
+      <workItem from="1575068750649" duration="670000" />
+      <workItem from="1575151682191" duration="6483000" />
+      <workItem from="1575306757433" duration="1583000" />
+      <workItem from="1575333312910" duration="55000" />
+      <workItem from="1575333379346" duration="4343000" />
+      <workItem from="1575347806695" duration="338000" />
+      <workItem from="1575348225185" duration="5109000" />
+      <workItem from="1575475561390" duration="1211000" />
     </task>
+    <task id="LOCAL-00001" summary="- Library config">
+      <created>1574819876318</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574819876318</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- restart">
+      <created>1575347516227</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575347516227</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- broke :/">
+      <created>1575353437341</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575353437341</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- Library config" />
+    <MESSAGE value="- restart" />
+    <MESSAGE value="- broke :/" />
+    <option name="LAST_COMMIT_MESSAGE" value="- broke :/" />
   </component>
 </project>

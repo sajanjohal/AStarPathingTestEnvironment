@@ -3,15 +3,13 @@ public class Cell {
     private Point pos;
     private int g;
     private int h;
+    private Cell previous;
 
-    public Cell(Point pos, int g, int h) {
+    public Cell(Point pos, int g, int h, Cell previous) {
         this.pos = pos;
         this.g = g;
         this.h = h;
-    }
-
-    public void setG(int newG) {
-        g = newG;
+        this.previous = previous;
     }
 
     public int getG() {
@@ -27,7 +25,11 @@ public class Cell {
     }
 
     public String toString() {
-        return pos.toString() + " Distance from start: " + g + " Hscore: " + h;
+        return pos.toString() + " F: " + getF();
+    }
+
+    public Cell getPrevious() {
+        return previous;
     }
 
 }
